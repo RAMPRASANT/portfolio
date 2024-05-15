@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  h3 {
+      @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+  }
+  h5{
+      @apply mb-2 text-2xl font-bold text-darkGrayishBlue
+  }
+}
+
+body{
+  /* background: linear-gradient(90deg, rgba(46,8,241,1) 0%, rgba(77,89,154,1) 35%, rgba(255,0,138,1) 100%); */
+  /* background: linear-gradient(#e66465, #9198e5); */
+}
+
+.section-container{
+  @apply max-w-7xl mx-auto text-center px-10
+}
+
+.section-content{
+  @apply max-w-3xl mx-auto leading-9 text-center text-grayishBlue
+}
+
+.button-container {
+  @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+.skills-background{
+  background-image: url('./assets/laptop.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 20
+}
