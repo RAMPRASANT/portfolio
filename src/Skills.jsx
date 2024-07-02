@@ -9,6 +9,7 @@ import tailwindLogo from './assets/tailwind.png';
 import graphqlLogo from './assets/graphql.png';
 import mongodbLogo from './assets/mongodb.png';
 import nodeLogo from './assets/node.png';
+import nextLogo from './assets/nextjs.png';
 import typescriptLogo from './assets/typescript.png';
 
 
@@ -54,6 +55,11 @@ const Skills = () => {
                     <div className="flex flex-col items-center space-y-5">
                         <div className="flex flex-col items-center space-y-5 bg-white p-6 rounded-2xl m-12 duration-200 cursor-pointer hover:-translate-y-1.5 transition-all shadow-red-300 shadow-2xl">
                             <img src={tailwindLogo} alt="" className="mb-6 h-40 w-800" />
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center space-y-5">
+                        <div className="flex flex-col items-center space-y-5 bg-white p-6 rounded-2xl m-12 duration-200 cursor-pointer hover:-translate-y-1.5 transition-all shadow-red-300 shadow-2xl">
+                            <img src={nextLogo} alt="" className="mb-6 h-40 w-800" />
                         </div>
                     </div>
                     <div className="flex flex-col items-center space-y-5">
